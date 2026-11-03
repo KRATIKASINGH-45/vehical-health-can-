@@ -1,0 +1,31 @@
+{
+  "frames_sent": 15000,
+  "frames_dropped_on_bus": 84,
+  "frames_corrupted_on_bus": 13,
+  "frames_decoded": 14903,
+  "crc_errors_detected": 13,
+  "missing_frames_via_sequence": 97,
+  "crc_detection_rate": 1.0,
+  "loss_rate": 0.005,
+  "corrupt_rate": 0.002,
+  "frames_received_matched": 14903,
+  "rule_alarm": {
+    "tp": 439,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "ml_alarm": {
+    "tp": 439,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.9955,
+    "recall": 1.0,
+    "f1": 0.9977
+  },
+  "fault_episodes": 15,
+  "episodes_detected": 15,
+  "mean_detection_delay_s": 0.0
+}

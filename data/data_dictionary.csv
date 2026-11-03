@@ -1,0 +1,8 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description
+timestamp,datetime string (YYYY-MM-DD HH:MM:SS),2024-01-01 00:00:00,2024-01-01 00:00:01,2024-01-01 00:00:02,No,"Time the CAN frame was logged; sequential, 1 reading per second."
+node_id,string (hex CAN ID),0x101,0x102,0x103,No,"CAN transmitter node that sent the frame: 0x101 engine, 0x102 transmission, 0x103 chassis."
+temp_C,float,38.4,36.7,35.6,No,Temperature in degrees Celsius (engine/coolant proxy). Normal about 85-95; above 105 is overheating.
+vibration_g,float,0.111,0.126,0.086,No,"Vibration magnitude in g. Idle about 0.1, driving about 0.2-0.45; above 0.8 is abnormal."
+rpm,integer,778,768,832,No,Engine speed in revolutions per minute. Idle about 800; cruising at 60-100 km/h about 2000-3200.
+fault_code,integer,0,0,0,No,"0 = no fault, 101 = overheating, 102 = abnormal vibration, 103 = overheating and abnormal vibration."
+alarm_flag,integer (0/1),0,0,0,No,"1 when fault_code is not 0, else 0. Target label for anomaly or fault detection."
